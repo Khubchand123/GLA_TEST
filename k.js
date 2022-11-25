@@ -1,8 +1,15 @@
-let arr=[[0, 1], [2, 3]];
-arr.reduce(
-    (acc, cur) => {
-      return acc.concat(cur);
-    },
-    [1, 2],
-  );
-  console.log(arr);
+
+th = document.querySelectorAll('[name="theme"]');
+th.forEach((theme) => {
+  theme.addEventListener("click", () => localStorage.setItem("theme", theme.id));
+});
+
+function app() {
+  st = localStorage.getItem("theme");
+  th.forEach((theme) => {
+    if (theme.id === st) {
+      theme.checked = true;
+    }
+  });
+}
+document.onload = app();
