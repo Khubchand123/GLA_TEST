@@ -8,9 +8,9 @@ section{
     padding: 50px 150px;
 }
 main{
-    border: 5px solid var(--bc);
+    border: 10px solid golden;
     background-color: white;
-    /* padding: 20px; */
+    border-radius: 50px;
 }
 h1{
     text-align: center;
